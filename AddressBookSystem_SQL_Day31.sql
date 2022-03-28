@@ -72,3 +72,11 @@ SELECT * from AddressBook;
 select count(AddressBookType) as 'NumberOfContacts' from AddressBook where AddressBookType='Family';
 select count(AddressBookType) as 'NumberOfContacts' from AddressBook where AddressBookType='Friends';
 select count(AddressBookType) as 'NumberOfContacts' from AddressBook where AddressBookType='Profession';
+
+--UC11 = ADD PERSON IN FAMILY AND FRIEND ADDRESSBOOK
+
+insert into AddressBook(FirstName,LastName,Email,Address,PhoneNo,Zip,State,City, AddressBookName, AddressBookType)values
+
+('Alia', 'Bhatt', 'alia', 'abcd', 91123455, 560040, 'Maha','Mumbai', 'familybook', 'Family'),
+('Sidhi', 'kumar', 'alia', 'abcd', 91123455, 560040, 'Maha','Goa', 'friendbook', 'Family');
+select * from AddressBook;
