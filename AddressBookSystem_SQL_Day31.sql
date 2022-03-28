@@ -51,6 +51,18 @@ delete from AddressBook where FirstName = 'Pallavi' and LastName = 'Samshette';
   select COUNT(*) as StateCount, State from AddressBook group by State;
   select COUNT(*) as CityCount, City from AddressBook group by City;
 
+
   --UC8 = Retrieves entries by alphabetically order by its name
 
   select * from AddressBook where City = 'Latur' order by FirstName,LastName;
+
+  --UC9 = identify addressbook with name and type
+
+  alter table AddressBook add AddressBookName varchar(50),AddressBookType varchar(50);
+select * from AddressBook;
+
+  update AddressBook set AddressBookName = 'familybook', AddressBookType = 'Family' where FirstName = 'Rupali';
+update AddressBook set AddressBookName = 'friendbook', AddressBookType = 'Friends' where FirstName = 'Mayuri';
+update AddressBook set AddressBookName = 'professionbook', AddressBookType = 'Profession' where FirstName = 'laxmi';
+SELECT * from AddressBook;
+
