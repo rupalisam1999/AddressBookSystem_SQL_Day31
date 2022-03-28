@@ -41,3 +41,7 @@ UPDATE AddressBook SET City = 'Kolhapur' WHERE FirstName = 'mayuri';
 
 delete from AddressBook where FirstName = 'Pallavi' and LastName = 'Samshette';
   SELECT * from AddressBook;
+
+  --UC6 = Retrieve person belongin to city or state
+
+  select * from AddressBook where City = 'Latur' or State = 'Maha';
