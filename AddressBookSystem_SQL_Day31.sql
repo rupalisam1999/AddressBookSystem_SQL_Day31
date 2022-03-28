@@ -50,3 +50,7 @@ delete from AddressBook where FirstName = 'Pallavi' and LastName = 'Samshette';
 
   select COUNT(*) as StateCount, State from AddressBook group by State;
   select COUNT(*) as CityCount, City from AddressBook group by City;
+
+  --UC8 = Retrieves entries by alphabetically order by its name
+
+  select * from AddressBook where City = 'Latur' order by FirstName,LastName;
