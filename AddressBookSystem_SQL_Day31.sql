@@ -36,3 +36,8 @@ UPDATE AddressBook SET City = 'Kolhapur' WHERE FirstName = 'mayuri';
 
  UPDATE AddressBook SET PhoneNo = '9322775225' WHERE FirstName = 'Pallavi';
  SELECT * from AddressBook;
+
+ --UC5 = Delet person using name
+
+delete from AddressBook where FirstName = 'Pallavi' and LastName = 'Samshette';
+  SELECT * from AddressBook;
