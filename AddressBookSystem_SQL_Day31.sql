@@ -45,3 +45,8 @@ delete from AddressBook where FirstName = 'Pallavi' and LastName = 'Samshette';
   --UC6 = Retrieve person belongin to city or state
 
   select * from AddressBook where City = 'Latur' or State = 'Maha';
+
+  --UC7 = understand size of addressbook by city or state
+
+  select COUNT(*) as StateCount, State from AddressBook group by State;
+  select COUNT(*) as CityCount, City from AddressBook group by City;
