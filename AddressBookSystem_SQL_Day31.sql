@@ -26,6 +26,13 @@ INSERT INTO AddressBook (FirstName,LastName,Email,Address,PhoneNo,Zip,State,City
 ('Mayuri','jadhv','anvi@123','Sai nagar',911256676,413512,'Maha','sangli')
 
 SELECT * from AddressBook;
- 
- 
- 
+
+--UC4 = Edit existing contact using name 
+UPDATE AddressBook SET City = 'Latur' WHERE FirstName = 'Rupali';
+SELECT * from AddressBook;
+
+UPDATE AddressBook SET City = 'Kolhapur' WHERE FirstName = 'mayuri';
+ SELECT * from AddressBook;
+
+ UPDATE AddressBook SET PhoneNo = '9322775225' WHERE FirstName = 'Pallavi';
+ SELECT * from AddressBook;
